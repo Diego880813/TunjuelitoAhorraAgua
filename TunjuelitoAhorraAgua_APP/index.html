@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f9f6">
+  <meta name="description" content="Organiza el agua de tu hogar paso a paso. Prototipo académico de Tunjuelito Ahorra Agua.">
+  <title>Tunjuelito Ahorra Agua · En familia</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/datos-demo.js"></script>
+  <script defer src="js/calculadora.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div class="app">
+    <header class="app-header">
+      <a class="brand" href="#inicio" aria-label="Tunjuelito Ahorra Agua, inicio">
+        <span class="brand-icon" data-icon="gota"></span>
+        <span>Tunjuelito<strong>Ahorra Agua</strong></span>
+      </a>
+      <span class="academic">PROTOTIPO<br>ACADÉMICO</span>
+    </header>
+    <main id="contenido" tabindex="-1"></main>
+    <footer class="app-footer">Hecho para cuidar el agua en familia.<br><span>Tunjuelito, Bogotá · Proyecto CDIO</span></footer>
+  </div>
+  <nav id="bottom-nav" aria-label="Navegación principal"></nav>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="confirmacion" aria-labelledby="dialog-title" aria-describedby="dialog-text">
+    <form method="dialog">
+      <span class="dialog-icon" data-icon="hogar"></span>
+      <h2 id="dialog-title">Cambiar hogar</h2>
+      <p id="dialog-text"></p>
+      <div class="dialog-actions">
+        <button value="cancel" class="btn secondary">Conservar mis datos</button>
+        <button value="ok" class="btn">Cargar este hogar</button>
+      </div>
+    </form>
+  </dialog>
+  <noscript><p>Activa JavaScript para usar los formularios y cálculos del prototipo.</p></noscript>
+</body>
+</html>
